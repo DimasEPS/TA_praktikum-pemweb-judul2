@@ -9,18 +9,14 @@
 
 ---
 
-## 📋 Deskripsi Project
+## 📋 Tentang Project
 
-Portfolio website pribadi yang dibangun menggunakan **HTML5** dan **CSS3** murni. Website ini menampilkan profil, skill, dan project-project yang telah dikerjakan. Project ini dibuat sebagai bagian dari Tugas Akhir Praktikum Pemrograman Web dengan fokus pada penerapan **Git dan Version Control System (VCS)**.
+Website portfolio pribadi sederhana yang dibuat menggunakan **HTML5** dan **CSS3**. Project ini merupakan Tugas Akhir Praktikum Pemrograman Web dengan fokus pembelajaran **Git dan Version Control System (VCS)**.
 
-### ✨ Fitur Utama
-
-- 🎯 **Responsive Navigation Bar** - Menu navigasi yang clean dan modern
-- 🌟 **Hero Section** - Tampilan pembuka dengan hero image yang menarik
-- 👤 **About Section** - Informasi profil dan skill yang dimiliki
-- 💼 **Projects Section** - Showcase project-project yang telah dikerjakan
-- 📧 **Contact Section** - Link untuk menghubungi via Email dan GitHub
-- 🎨 **Modern Design** - UI/UX yang clean dan user-friendly
+**Teknologi:**
+- HTML5 untuk struktur halaman
+- CSS3 untuk styling dan layout
+- Git untuk version control
 
 ---
 
@@ -70,104 +66,147 @@ prak-pemweb/
 
 ---
 
-## 📝 Git Log - Riwayat Pengembangan
+## 📝 Git Log & Version Control
 
-Berikut adalah dokumentasi lengkap proses pengembangan website ini menggunakan Git:
+Berikut adalah dokumentasi penggunaan Git dalam pengembangan project ini:
 
-### 🔄 Commit History
+### 📊 Git Log
 
-| No  | Commit Hash | Pesan Commit                                     | Deskripsi                                                                                                    |
-| --- | ----------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
-| 7   | `0777850`   | **add scrennshot folder for portofolio preview** | Menambahkan folder screenshot berisi preview tampilan website untuk dokumentasi dan README                   |
-| 6   | `0ea7110`   | **add styling css**                              | Implementasi styling lengkap untuk seluruh komponen website (navbar, hero, about, projects, contact, footer) |
-| 5   | `1f04dbd`   | **add hero image**                               | Menambahkan hero image untuk membuat tampilan hero section lebih menarik                                     |
-| 4   | `f90d0c5`   | **add About, Projects and contact section**      | Membuat struktur HTML untuk section About (profil & skill), Projects (showcase), dan Contact                 |
-| 3   | `d7a6a5a`   | **add Hero Section**                             | Membuat Hero Section sebagai landing page dengan greeting dan CTA button                                     |
-| 2   | `bfe6eff`   | **add navbar**                                   | Implementasi navigation bar dengan menu Beranda, Tentang, Projects, dan Contact                              |
-| 1   | `7442b5f`   | **add assets image**                             | Menambahkan folder assets untuk menyimpan gambar-gambar yang digunakan                                       |
-| 0   | `56e3cda`   | **initial commit**                               | Commit pertama - inisialisasi repository dan setup awal project                                              |
+![Git Log](screenshot/git-log.png)
 
-### 📊 Workflow Pengembangan
+### 🔄 Riwayat Commit
 
-```mermaid
-gitGraph
-    commit id: "initial commit"
-    commit id: "add assets image"
-    commit id: "add navbar"
-    commit id: "add Hero Section"
-    commit id: "add About, Projects, Contact"
-    commit id: "add hero image"
-    commit id: "add styling css"
-    commit id: "add screenshot folder"
+| Commit Hash | Pesan Commit |
+|-------------|--------------|
+| `9581844` | update readme |
+| `0777850` | add scrennshot folder for portofolio preview |
+| `0ea7110` | add styling css |
+| `1f04dbd` | add hero image |
+| `f90d0c5` | add About, Projects and contact section |
+| `d7a6a5a` | add Hero Section |
+| `bfe6eff` | add navbar |
+| `7442b5f` | add assets image |
+| `56e3cda` | initial commit |
+
+---
+
+## 🌿 Git Branching
+
+Project ini menggunakan 2 branch dalam pengembangannya:
+
+### Branch Structure
+
+```
+main (branch utama)
+ │
+ └─── styling (branch untuk development styling)
 ```
 
-### 🎯 Penjelasan Tahapan Development
+**Branch `main`:**
+- Branch utama yang berisi kode production-ready
+- Semua fitur yang sudah selesai di-merge ke branch ini
 
-#### 1️⃣ **Inisialisasi** (`56e3cda`)
-
-Memulai project dengan setup repository Git dan struktur folder awal.
-
-#### 2️⃣ **Assets Preparation** (`7442b5f`)
-
-Menyiapkan folder assets untuk mengelola gambar dan resource lainnya.
-
-#### 3️⃣ **Navigation Development** (`bfe6eff`)
-
-Membangun komponen navbar sebagai elemen navigasi utama website.
-
-#### 4️⃣ **Hero Section** (`d7a6a5a`)
-
-Membuat landing page dengan hero section yang berisi greeting dan call-to-action.
-
-#### 5️⃣ **Content Sections** (`f90d0c5`)
-
-Menambahkan section-section utama: About (profil), Projects (portfolio), dan Contact.
-
-#### 6️⃣ **Visual Enhancement** (`1f04dbd`)
-
-Menambahkan hero image untuk meningkatkan visual appeal.
-
-#### 7️⃣ **Styling Implementation** (`0ea7110`)
-
-Implementasi CSS lengkap untuk styling seluruh komponen dengan desain modern.
-
-#### 8️⃣ **Documentation** (`0777850`)
-
-Menambahkan screenshot untuk dokumentasi dan keperluan README.
+**Branch `styling`:**
+- Branch khusus untuk mengerjakan styling CSS
+- Digunakan untuk isolasi pekerjaan styling agar tidak mengganggu branch main
+- Setelah styling selesai, di-merge ke branch main
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🔧 Git Commands yang Digunakan
 
-- **HTML5** - Struktur dan konten website
-- **CSS3** - Styling dan layout
-- **Git** - Version control system
-- **GitHub** - Repository hosting
+Berikut adalah penjelasan command-command Git yang digunakan selama pengembangan:
 
----
+### 1. Inisialisasi & Setup
+```bash
+git init
+```
+**Fungsi:** Menginisialisasi repository Git baru di folder project
 
-## 💡 Pembelajaran dari Project Ini
+```bash
+git config user.name "Nama"
+git config user.email "email@example.com"
+```
+**Fungsi:** Mengatur identitas user untuk commit
 
-Melalui project ini, saya mempelajari dan menerapkan:
+### 2. Basic Operations
+```bash
+git status
+```
+**Fungsi:** Melihat status perubahan file (modified, staged, untracked)
 
-✅ **Git Basics**
+```bash
+git add .
+```
+**Fungsi:** Menambahkan semua perubahan file ke staging area
 
-- `git init` - Inisialisasi repository
-- `git add` - Menambahkan file ke staging area
-- `git commit` - Menyimpan perubahan dengan pesan deskriptif
-- `git log` - Melihat riwayat commit
+```bash
+git add namafile
+```
+**Fungsi:** Menambahkan file tertentu ke staging area
 
-✅ **Best Practices**
+```bash
+git commit -m "pesan commit"
+```
+**Fungsi:** Menyimpan perubahan yang ada di staging area ke repository dengan pesan deskriptif
 
-- Membuat commit yang atomic (satu commit = satu fitur/perubahan)
-- Menulis commit message yang jelas dan deskriptif
-- Mengorganisir file dan folder dengan struktur yang rapi
+### 3. Branching & Merging
+```bash
+git branch
+```
+**Fungsi:** Melihat daftar branch yang ada dan branch aktif saat ini
 
-✅ **Web Development**
+```bash
+git checkout -b styling
+```
+**Fungsi:** Membuat branch baru bernama "styling" dan langsung pindah ke branch tersebut
 
-- Membuat layout responsive
-- Implementasi modern CSS
-- Struktur HTML semantik
+```bash
+git checkout main
+```
+**Fungsi:** Pindah ke branch "main"
+
+```bash
+git merge styling
+```
+**Fungsi:** Menggabungkan perubahan dari branch "styling" ke branch aktif (main)
+
+### 4. History & Logs
+```bash
+git log
+```
+**Fungsi:** Melihat riwayat commit lengkap dengan detail author, date, dan hash
+
+```bash
+git log --oneline
+```
+**Fungsi:** Melihat riwayat commit dalam format singkat (satu baris per commit)
+
+```bash
+git log --graph
+```
+**Fungsi:** Melihat riwayat commit dalam bentuk grafik/tree
+
+### 5. Remote Repository
+```bash
+git remote add origin <url>
+```
+**Fungsi:** Menghubungkan repository lokal dengan repository remote (GitHub)
+
+```bash
+git push origin main
+```
+**Fungsi:** Mengirim commit dari branch main lokal ke repository remote
+
+```bash
+git push origin styling
+```
+**Fungsi:** Mengirim commit dari branch styling ke repository remote
+
+```bash
+git pull
+```
+**Fungsi:** Mengambil dan menggabungkan perubahan dari repository remote ke lokal
 
 ---
 
