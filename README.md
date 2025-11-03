@@ -14,6 +14,7 @@
 Website portfolio pribadi sederhana yang dibuat menggunakan **HTML5** dan **CSS3**. Project ini merupakan Tugas Akhir Praktikum Pemrograman Web dengan fokus pembelajaran **Git dan Version Control System (VCS)**.
 
 **Teknologi:**
+
 - HTML5 untuk struktur halaman
 - CSS3 untuk styling dan layout
 - Git untuk version control
@@ -72,21 +73,21 @@ Berikut adalah dokumentasi penggunaan Git dalam pengembangan project ini:
 
 ### 📊 Git Log
 
-![Git Log](screenshot/git-log.png)
+![Git Log](git-log.png)
 
 ### 🔄 Riwayat Commit
 
-| Commit Hash | Pesan Commit |
-|-------------|--------------|
-| `9581844` | update readme |
-| `0777850` | add scrennshot folder for portofolio preview |
-| `0ea7110` | add styling css |
-| `1f04dbd` | add hero image |
-| `f90d0c5` | add About, Projects and contact section |
-| `d7a6a5a` | add Hero Section |
-| `bfe6eff` | add navbar |
-| `7442b5f` | add assets image |
-| `56e3cda` | initial commit |
+| Commit Hash | Pesan Commit                                 |
+| ----------- | -------------------------------------------- |
+| `9581844`   | update readme                                |
+| `0777850`   | add scrennshot folder for portofolio preview |
+| `0ea7110`   | add styling css                              |
+| `1f04dbd`   | add hero image                               |
+| `f90d0c5`   | add About, Projects and contact section      |
+| `d7a6a5a`   | add Hero Section                             |
+| `bfe6eff`   | add navbar                                   |
+| `7442b5f`   | add assets image                             |
+| `56e3cda`   | initial commit                               |
 
 ---
 
@@ -103,10 +104,12 @@ main (branch utama)
 ```
 
 **Branch `main`:**
+
 - Branch utama yang berisi kode production-ready
 - Semua fitur yang sudah selesai di-merge ke branch ini
 
 **Branch `styling`:**
+
 - Branch khusus untuk mengerjakan styling CSS
 - Digunakan untuk isolasi pekerjaan styling agar tidak mengganggu branch main
 - Setelah styling selesai, di-merge ke branch main
@@ -118,105 +121,117 @@ main (branch utama)
 Berikut adalah penjelasan command-command Git yang digunakan selama pengembangan:
 
 ### 1. Inisialisasi & Setup
+
 ```bash
 git init
 ```
+
 **Fungsi:** Menginisialisasi repository Git baru di folder project
 
 ```bash
 git config user.name "Nama"
 git config user.email "email@example.com"
 ```
+
 **Fungsi:** Mengatur identitas user untuk commit
 
 ### 2. Basic Operations
+
 ```bash
 git status
 ```
+
 **Fungsi:** Melihat status perubahan file (modified, staged, untracked)
 
 ```bash
 git add .
 ```
+
 **Fungsi:** Menambahkan semua perubahan file ke staging area
 
 ```bash
 git add namafile
 ```
+
 **Fungsi:** Menambahkan file tertentu ke staging area
 
 ```bash
 git commit -m "pesan commit"
 ```
+
 **Fungsi:** Menyimpan perubahan yang ada di staging area ke repository dengan pesan deskriptif
 
 ### 3. Branching & Merging
+
 ```bash
 git branch
 ```
+
 **Fungsi:** Melihat daftar branch yang ada dan branch aktif saat ini
 
 ```bash
 git checkout -b styling
 ```
+
 **Fungsi:** Membuat branch baru bernama "styling" dan langsung pindah ke branch tersebut
 
 ```bash
 git checkout main
 ```
+
 **Fungsi:** Pindah ke branch "main"
 
 ```bash
 git merge styling
 ```
+
 **Fungsi:** Menggabungkan perubahan dari branch "styling" ke branch aktif (main)
 
 ### 4. History & Logs
+
 ```bash
 git log
 ```
+
 **Fungsi:** Melihat riwayat commit lengkap dengan detail author, date, dan hash
 
 ```bash
 git log --oneline
 ```
+
 **Fungsi:** Melihat riwayat commit dalam format singkat (satu baris per commit)
 
 ```bash
 git log --graph
 ```
+
 **Fungsi:** Melihat riwayat commit dalam bentuk grafik/tree
 
 ### 5. Remote Repository
+
 ```bash
 git remote add origin <url>
 ```
+
 **Fungsi:** Menghubungkan repository lokal dengan repository remote (GitHub)
 
 ```bash
 git push origin main
 ```
+
 **Fungsi:** Mengirim commit dari branch main lokal ke repository remote
 
 ```bash
 git push origin styling
 ```
+
 **Fungsi:** Mengirim commit dari branch styling ke repository remote
 
 ```bash
 git pull
 ```
+
 **Fungsi:** Mengambil dan menggabungkan perubahan dari repository remote ke lokal
-
----
-
-## 👨‍💻 Author
-
-**Dimas Eka Putra Santoso**
-
-- 📧 Email: dimasekaputrasantoso@gmail.com
-- 🐙 GitHub: [@DimasEPS](https://github.com/DimasEPS)
-- 🎓 Universitas Lampung - Teknik Informatika
 
 ---
 
@@ -225,11 +240,3 @@ git pull
 Project ini dibuat untuk keperluan akademik (Tugas Akhir Praktikum Pemrograman Web).
 
 ---
-
-<div align="center">
-
-**⭐ Jangan lupa untuk memberikan star jika project ini bermanfaat! ⭐**
-
-Made with ❤️ by Dimas
-
-</div>
